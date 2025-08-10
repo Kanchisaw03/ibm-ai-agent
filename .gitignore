@@ -1,0 +1,44 @@
+# Ignore Python virtual environments
+venv/
+*/venv/
+*/.venv/
+
+# Ignore __pycache__ files
+__pycache__/
+
+# Ignore any compiled Python files
+*.pyc
+*.pyo
+*.pyd
+
+# Ignore local environment files
+.env
+*.env
+**/.env
+
+# OS files
+.DS_Store
+Thumbs.db
+
+# Logs and artifacts
+*.log
+**/logs/
+
+# Model artifacts and large files
+*.pt
+*.bin
+*.safetensors
+*.onnx
+*.pkl
+**/models/
+**/cache/
+
+# Output maps (generated)
+**/output_maps/*.html
+
+# Node/npm (if present)
+node_modules/
+
+# IDE
+.vscode/
+.idea/
