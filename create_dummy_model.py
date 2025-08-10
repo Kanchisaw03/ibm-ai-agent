@@ -1,3 +1,44 @@
+"""
+Utility script to create and persist a tiny housing KMeans model to
+`housing_agent/housing_risk_model.pkl` for offline runs.
+
+Usage (PowerShell):
+  python create_dummy_model.py
+"""
+
+import os
+import joblib
+import pandas as pd
+from sklearn.cluster import KMeans
+from sklearn.preprocessing import MinMaxScaler
+
+
+def main() -> None:
+    base = os.path.join(os.path.dirname(__file__), "housing_agent")
+    out_path = os.path.join(base, "housing_risk_model.pkl")
+    os.makedirs(base, exist_ok=True)
+
+    scaler = MinMaxScaler()
+    synthetic = pd.DataFrame(
+        [
+            [20, 500, 70, 20],
+            [40, 1500, 50, 40],
+            [60, 5000, 30, 60],
+            [80, 10000, 15, 80],
+            [10, 20000, 85, 10],
+        ],
+        columns=["condition", "density", "low_income_pct", "access"],
+    )
+    X = scaler.fit_transform(synthetic.values)
+    kmeans = KMeans(n_clusters=3, n_init=5, random_state=42)
+    kmeans.fit(X)
+    joblib.dump({"scaler": scaler, "kmeans": kmeans}, out_path)
+    print(f"Saved dummy model to {out_path}")
+
+
+if __name__ == "__main__":
+    main()
+
 import pandas as pd
 from sklearn.ensemble import RandomForestClassifier
 from sklearn.preprocessing import LabelEncoder

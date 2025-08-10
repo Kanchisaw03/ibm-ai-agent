@@ -1,0 +1,7 @@
+location_name,latitude,longitude,housing_condition_score,population_density,low_income_household_percentage,access_to_services_score,risk_label
+Central District,12.9716,77.5946,65,5200,25,70,medium
+Riverside,12.9870,77.6100,28,15000,72,22,high
+Industrial Zone,12.9400,77.5800,45,9800,48,40,medium
+Periphery North,13.0200,77.6400,78,1800,15,85,low
+Old Town,12.9600,77.6200,35,12000,60,35,high
+
