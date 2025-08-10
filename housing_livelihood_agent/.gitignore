@@ -1,0 +1,9 @@
+# Folders
+output_maps/
+
+# Files
+relocation_model.pkl
+
+# Python
+__pycache__/
+*.pyc

@@ -1,0 +1,39 @@
+[
+  {
+    "citizen_id": "CIT001",
+    "feedback_text": "The road near the community center has deep potholes and no streetlights.",
+    "location_lat": 19.0760,
+    "location_lon": 72.8777,
+    "timestamp": "2025-07-21T10:00:00Z"
+  },
+  {
+    "citizen_id": "CIT002",
+    "feedback_text": "Garbage is piling up around the market; please increase waste collection.",
+    "location_lat": 22.5726,
+    "location_lon": 88.3639,
+    "timestamp": "2025-07-21T11:00:00Z"
+  },
+  {
+    "citizen_id": "CIT003",
+    "feedback_text": "The historic temple wall is crumbling; we need preservation and better visitor guidance signs.",
+    "location_lat": 13.0827,
+    "location_lon": 80.2707,
+    "timestamp": "2025-07-21T12:00:00Z"
+  },
+  {
+    "citizen_id": "CIT004",
+    "feedback_text": "Frequent water supply issues in our lane; also a foul smell from open drains.",
+    "location_lat": 28.6139,
+    "location_lon": 77.2090,
+    "timestamp": "2025-07-21T13:00:00Z"
+  },
+  {
+    "citizen_id": "CIT005",
+    "feedback_text": "Residents report bribery demands for building permits at the ward office.",
+    "location_lat": 17.3850,
+    "location_lon": 78.4867,
+    "timestamp": "2025-07-21T14:00:00Z"
+  }
+]
+
+
